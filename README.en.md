@@ -12,7 +12,7 @@ It is built on [pandoc](https://pandoc.org) and
 [pandoc-crossref](https://github.com/lierdakil/pandoc-crossref); the app
 downloads and sets them up for you on first launch.
 
----
+
 
 ## Features
 
@@ -35,19 +35,19 @@ downloads and sets them up for you on first launch.
 
 > The app interface and log messages are in Russian.
 
----
+
 
 ## Requirements
 
 | Component | Version | Notes |
-|---|---|---|
+||||
 | Python | **3.10+** | Older versions will not start the app |
 | Tkinter | bundled with Python | On Linux install it separately: `sudo apt install python3-tk` |
 | pandoc | 3.9+ | Installed automatically into `bin/` |
 | pandoc-crossref | matching your pandoc | Installed automatically into `bin/` |
 | Internet | first launch only | Needed to download pandoc from GitHub |
 
----
+
 
 ## Installation
 
@@ -105,7 +105,7 @@ python tools/install_pandoc.py --pandoc 3.9  # a specific pandoc version
 If GitHub reports a rate limit, set the `GITHUB_TOKEN` environment variable to
 a personal GitHub token.
 
----
+
 
 ## Usage
 
@@ -130,7 +130,7 @@ diagram rendering.
 > When you first open the document, Word may offer to update fields — accept.
 > If the table of contents still has no page numbers, press `Ctrl+A`, then `F9`.
 
----
+
 
 
 ## Using it with an AI assistant
@@ -141,7 +141,7 @@ diagram rendering.
 2. Ask it to write the report on your topic.
 3. Save the answer as `.md` and convert it with md2gost.
 
----
+
 
 
 ## Custom style profiles
@@ -152,7 +152,7 @@ CSL style and extra pandoc arguments. See
 [`resources/styles/README.md`](resources/styles/README.md) (in Russian) for
 details.
 
----
+
 
 ## License
 

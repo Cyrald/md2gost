@@ -12,27 +12,6 @@ It is built on [pandoc](https://pandoc.org) and
 [pandoc-crossref](https://github.com/lierdakil/pandoc-crossref); the app
 downloads and sets them up for you on first launch.
 
-### Features
-
-- **GOST 7.32-2017 layout**: A4, 30/15/20/20 mm margins, Times New Roman 14 pt,
-  1.5 line spacing, 1.25 cm first-line indent, page numbers bottom center.
-- **Automatic section numbering** `1`, `1.1`, `1.1.1` (can be turned off).
-- **Captions and cross-references**: "Рисунок 1.1 — …", "Таблица 1.1 — …",
-  equation numbers right-aligned in parentheses; `@fig:…`, `@tbl:…`, `@eq:…`
-  references become numbers.
-- **Bibliography** from a `.bib` file in GOST R 7.0.5-2008 style (numeric `[1]`).
-- **Automatic table of contents**.
-- **Title page** from any `.docx`: it is prepended to the body, and its styles
-  are kept separate from the report's styles and out of the table of contents.
-- **Inline diagrams**: a `<diagram>` block with matplotlib code is rendered to
-  PNG and inserted as a regular figure.
-- **Style profiles**: add your own standard next to GOST 7.32-2017.
-- **AI instructions**: a ready-made prompt so that ChatGPT, Claude and similar
-  tools write Markdown in exactly the right format.
-- Runs on **Windows, macOS and Linux**.
-
-> The app interface and log messages are in Russian.
-
 ### Requirements
 
 | Component | Version | Notes |

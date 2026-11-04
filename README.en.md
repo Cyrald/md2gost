@@ -12,8 +12,7 @@ It is built on [pandoc](https://pandoc.org) and
 [pandoc-crossref](https://github.com/lierdakil/pandoc-crossref); the app
 downloads and sets them up for you on first launch.
 
-
-## Features
+### Features
 
 - **GOST 7.32-2017 layout**: A4, 30/15/20/20 mm margins, Times New Roman 14 pt,
   1.5 line spacing, 1.25 cm first-line indent, page numbers bottom center.
@@ -34,8 +33,7 @@ downloads and sets them up for you on first launch.
 
 > The app interface and log messages are in Russian.
 
-
-## Requirements
+### Requirements
 
 | Component | Version | Notes |
 |---|---|---|
@@ -46,9 +44,9 @@ downloads and sets them up for you on first launch.
 | Internet | first launch only | Needed to download pandoc from GitHub |
 
 
-## Installation
+### Installation
 
-### 1. Get the code
+#### 1. Get the code
 
 ```bash
 git clone https://github.com/<user>/md2gost.git
@@ -57,7 +55,7 @@ cd md2gost
 
 Or download the repository as a ZIP and extract it.
 
-### 2. Create a virtual environment and install dependencies
+#### 2. Create a virtual environment and install dependencies
 
 **Windows (PowerShell / CMD):**
 
@@ -75,7 +73,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 3. Run
+#### 3. Run
 
 ```bash
 python main.py
@@ -86,7 +84,7 @@ missing or incompatible, it downloads a matching pair from GitHub into `bin/`
 (about 40 MB). Progress is shown in the status bar at the bottom of the
 window. Your system-wide pandoc is never modified.
 
-### Installing pandoc manually (optional)
+#### Installing pandoc manually (optional)
 
 You can run the installer on its own from a terminal:
 
@@ -102,8 +100,7 @@ python tools/install_pandoc.py --pandoc 3.9  # a specific pandoc version
 If GitHub reports a rate limit, set the `GITHUB_TOKEN` environment variable to
 a personal GitHub token.
 
-
-## Usage
+### Usage
 
 1. **Markdown (.md)** — choose the file with your report text.
 2. **.bib файл** — optional BibTeX bibliography.
@@ -126,8 +123,7 @@ diagram rendering.
 > When you first open the document, Word may offer to update fields — accept.
 > If the table of contents still has no page numbers, press `Ctrl+A`, then `F9`.
 
-
-## Using it with an AI assistant
+### Using it with an AI assistant
 
 1. Give the assistant
    `resources/styles/GOST_7.32-2017/GOST_7.32-2017.ai.md` as instructions
@@ -135,8 +131,7 @@ diagram rendering.
 2. Ask it to write the report on your topic.
 3. Save the answer as `.md` and convert it with md2gost.
 
-
-## Custom style profiles
+### Custom style profiles
 
 Each profile is a folder in `resources/styles/` with a `config.cfg` and a
 reference `.docx`. You can also add a Lua filter, pandoc-crossref settings, a
@@ -144,8 +139,7 @@ CSL style and extra pandoc arguments. See
 [`resources/styles/README.md`](resources/styles/README.md) (in Russian) for
 details.
 
-
-## License
+### License
 
 This project is licensed under the [MIT License](LICENSE).
 

@@ -1,0 +1,23 @@
+toc-title: "Содержание"
+lang: "ru-RU"
+figureTitle: "Рисунок"
+tableTitle: "Таблица"
+listingTitle: "Листинг"
+figPrefix: "рис."
+tblPrefix: "табл."
+eqnPrefix: "форм."
+lstPrefix: "листинг"
+secPrefix: "раздел"
+chapters: true
+tableTemplate: "$$tableTitle$$ $$i$$ — $$t$$"
+figureTemplate: "$$figureTitle$$ $$i$$ — $$t$$"
+# §10: номер формулы — в скобках на уровне формулы справа. Строка
+# «<tab>формула<tab>(номер)» в стиле Equation из шаблона DOCX, табуляции
+# которого ставят формулу по центру, а номер — к правому полю
+tableEqns: true
+eqnBlockInlineMath: true
+eqnInlineTableTemplate: '\\displaystyle $$e$$'
+eqnBlockTemplate: |
+  ::: {custom-style="Equation"}
+  `<w:r><w:tab/></w:r>`{=openxml}$$t$$`<w:r><w:tab/></w:r>`{=openxml}$$nmi$$
+  :::

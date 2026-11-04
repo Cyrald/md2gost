@@ -12,7 +12,6 @@
 [pandoc-crossref](https://github.com/lierdakil/pandoc-crossref); программа
 сама скачивает и настраивает их при первом запуске.
 
-
 ## Возможности
 
 - **Оформление по ГОСТ 7.32-2017**: A4, поля 30/15/20/20 мм, Times New Roman 14 пт,

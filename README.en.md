@@ -13,7 +13,6 @@ It is built on [pandoc](https://pandoc.org) and
 downloads and sets them up for you on first launch.
 
 
-
 ## Features
 
 - **GOST 7.32-2017 layout**: A4, 30/15/20/20 mm margins, Times New Roman 14 pt,
@@ -36,17 +35,15 @@ downloads and sets them up for you on first launch.
 > The app interface and log messages are in Russian.
 
 
-
 ## Requirements
 
 | Component | Version | Notes |
-||||
+|---|---|---|
 | Python | **3.10+** | Older versions will not start the app |
 | Tkinter | bundled with Python | On Linux install it separately: `sudo apt install python3-tk` |
 | pandoc | 3.9+ | Installed automatically into `bin/` |
 | pandoc-crossref | matching your pandoc | Installed automatically into `bin/` |
 | Internet | first launch only | Needed to download pandoc from GitHub |
-
 
 
 ## Installation
@@ -106,7 +103,6 @@ If GitHub reports a rate limit, set the `GITHUB_TOKEN` environment variable to
 a personal GitHub token.
 
 
-
 ## Usage
 
 1. **Markdown (.md)** — choose the file with your report text.
@@ -131,8 +127,6 @@ diagram rendering.
 > If the table of contents still has no page numbers, press `Ctrl+A`, then `F9`.
 
 
-
-
 ## Using it with an AI assistant
 
 1. Give the assistant
@@ -142,8 +136,6 @@ diagram rendering.
 3. Save the answer as `.md` and convert it with md2gost.
 
 
-
-
 ## Custom style profiles
 
 Each profile is a folder in `resources/styles/` with a `config.cfg` and a
@@ -151,7 +143,6 @@ reference `.docx`. You can also add a Lua filter, pandoc-crossref settings, a
 CSL style and extra pandoc arguments. See
 [`resources/styles/README.md`](resources/styles/README.md) (in Russian) for
 details.
-
 
 
 ## License
